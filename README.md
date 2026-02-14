@@ -46,8 +46,6 @@ The `Product` class represents a product entity.
 ## 🗂 ProductManagerMap
 
 Uses:
-
-```java
 Map<Integer, Product> mpp = new HashMap<>();
 
 ---
