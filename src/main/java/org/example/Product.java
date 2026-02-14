@@ -7,18 +7,18 @@ public class Product implements Comparable<Product> {
     private String brand;
     private String category;
     private int rating;
-    private int percentage;
+    private int discountPercentage;
 
 
 
-    Product(int id, String pName, double cost, String brand, String category, int rating, int percentage){
+    Product(int id, String pName, double cost, String brand, String category, int rating, int discountPercentage){
         this.id=id;
         this.pName=pName;
         this.cost=cost;
         this.brand=brand;
         this.category=category;
         this.rating=rating;
-        this.percentage=percentage;
+        this.discountPercentage=discountPercentage;
 
     }
     public int getId() {
@@ -46,7 +46,7 @@ public class Product implements Comparable<Product> {
     }
 
     public int getPercentage() {
-        return percentage;
+        return discountPercentage;
     }
 
     @Override
@@ -58,7 +58,7 @@ public class Product implements Comparable<Product> {
                 ", brand='" + brand + '\'' +
                 ", category='" + category + '\'' +
                 ", rating=" + rating +
-                ", percentage=" + percentage +
+                ", percentage=" + discountPercentage +
                 '}';
     }
 
